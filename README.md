@@ -21,3 +21,5 @@ publishes the end effector positions and a subscriber script to compute the join
 RVIZ. 
 9. Developed  scripts  to implement gaits for the  robot  in  gazebo. Walk  and trot gaits  were analyzed and 
 simulated. 
+
+
