@@ -25,6 +25,6 @@ simulated.
 ## Steps to run the package
 1. Clone the repository and move the ROS package to an empty folder.
 2. Perform a catkin_make_clean and source the bashrc.
-3. Run the command roslaunch "folder_name" quad_leg.launch to view the CAD model of the robot in the GAzebo world
-4. Run t
+3. Run the command roslaunch "package_name" quad_leg.launch to view the CAD model of the robot in the GAzebo world
+4. Run the command rosrun "package_name" gait.py to simulate the 4-legged robot moving using a walk gait and a trot gait.
 
