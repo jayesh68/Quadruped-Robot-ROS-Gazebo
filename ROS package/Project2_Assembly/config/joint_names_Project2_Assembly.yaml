@@ -1,0 +1,98 @@
+# Robot name goes here
+quad_walk: 
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  left_rear_hip_control: 
+    type: effort_controllers/JointPositionController
+    joint: left_rear_hip_joint1  
+    pid : {p: 10.0 , i: 0.01 , d: 0.1}
+  
+  # Controller 2
+  left_rear_knee_control: 
+    type: effort_controllers/JointPositionController
+    joint: left_rear_knee_joint1 
+    pid : {p: 10.0 , i: 0.01, d: 0.1}
+
+  #Controller 3
+  left_front_hip_control: 
+    type: effort_controllers/JointPositionController
+    joint: left_front_hip_joint1
+    pid : {p: 10.0 , i: 0.01 , d: 0.1}
+
+  # Controller 4
+  left_front_knee_control: 
+    type: effort_controllers/JointPositionController
+    joint: left_front_knee_joint1  
+    pid : {p: 10.0 , i: 0.01 , d: 0.1}
+  
+  # Controller 5
+  right_front_hip_control: 
+    type: effort_controllers/JointPositionController
+    joint: right_front_hip_joint1
+    pid : {p: 10.0 , i: 0.01, d: 0.1}
+
+  #Controller 6
+  right_front_knee_control: 
+    type: effort_controllers/JointPositionController
+    joint: right_front_knee_joint1 
+    pid : {p: 10.0 , i: 0.01 , d: 0.1}
+
+  # Controller 7
+  right_rear_hip_control: 
+    type: effort_controllers/JointPositionController
+    joint: right_rear_hip_joint1
+    pid : {p: 10.0 , i: 0.01, d: 0.1}
+
+  #Controller 8
+  right_rear_knee_control: 
+    type: effort_controllers/JointPositionController
+    joint: right_rear_knee_joint1 
+    pid : {p: 10.0 , i: 0.01 , d: 0.1}
+
+  #Controller 9
+#right_rear_foot_control: 
+#    type: velocity_controllers/JointVelocityController
+##    joint: right_rear_dummy_joint
+#   pid : {p: 1 , i: 0.01 , d: 0.01}
+
+  # Controller 13
+  right_arm_control1: 
+    type: effort_controllers/JointPositionController
+    joint: right_arm_joint1
+    pid : {p: 10 , i: 0.01 , d: 0.1}
+  
+  #Controller 14
+  left_arm_control1: 
+    type: effort_controllers/JointPositionController
+    joint: left_arm_joint1
+    pid : {p: 10 , i: 0.01 , d: 0.1}
+
+
+  # Controller 15
+  right_arm_control3: 
+    type: effort_controllers/JointPositionController
+    joint: right_arm_joint3
+    pid : {p: 10 , i: 0.01 , d: 0.1}
+  
+  #Controller 16
+  left_arm_control3: 
+    type: effort_controllers/JointPositionController
+    joint: left_arm_joint3
+    pid : {p: 10 , i: 0.01 , d: 0.1}
+
+
+  # Controller 17
+  right_arm_control5: 
+    type: effort_controllers/JointPositionController
+    joint: right_arm_joint5
+    pid : {p: 10 , i: 0.01 , d: 0.1}
+  
+  #Controller 18
+  left_arm_control5: 
+    type: effort_controllers/JointPositionController
+    joint: left_arm_joint5
+    pid : {p: 10 , i: 0.01 , d: 0.1}

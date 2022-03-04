@@ -1,0 +1,2082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Project2_Assembly">
+  <link
+    name="dummy_link">
+  </link>
+  <joint
+    name="dummy_joint"
+    type="fixed">
+    <parent
+      link="dummy_link" />
+    <child
+      link="base_link" />
+  </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.185748920268411 0.185789407892482 -0.798271405453909"
+        rpy="0 0 0" />
+      <mass
+        value="4.36700755653188" />
+      <inertia
+        ixx="0.030365726134738"
+        ixy="0.00652149162392971"
+        ixz="0.00297506888940774"
+        iyy="0.0178204642076725"
+        iyz="0.000563260489121419"
+        izz="0.0284925976105569" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="platform_link">
+    <inertial>
+      <origin
+        xyz="8.32667268468867E-17 -5.55111512312578E-17 0.00454448000326668"
+        rpy="0 0 0" />
+      <mass
+        value="0.221453327467568" />
+      <inertia
+        ixx="0.000766812354982266"
+        ixy="3.04931861011548E-20"
+        ixz="-1.01813360259967E-18"
+        iyy="0.00100112681592481"
+        iyz="1.21972744404619E-18"
+        izz="0.00157928891231331" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/platform_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/platform_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="platform_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="platform_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_arm_link">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 -1.11022302462516E-16 0.0269203616457798"
+        rpy="0 0 0" />
+      <mass
+        value="0.0772222198144585" />
+      <inertia
+        ixx="4.25551704324029E-05"
+        ixy="1.6940658945086E-21"
+        ixz="-2.5410988417629E-20"
+        iyy="4.25551704324029E-05"
+        iyz="9.95396061921811E-20"
+        izz="1.8682757750811E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.112779638354221 -0.0279400000000001"
+      rpy="-1.57079632679486 1.49005517178331 -3.14159265358976" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_arm_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_arm_link1">
+    <inertial>
+      <origin
+        xyz="0.0634999999999999 -7.76462227847219E-14 0.0040296383542201"
+        rpy="0 0 0" />
+      <mass
+        value="0.0561945800618472" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="2.92460359654413E-17"
+        ixz="-4.70103285726137E-20"
+        iyy="3.81793048154064E-05"
+        iyz="8.470329472543E-21"
+        izz="5.08927425696672E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0499999999999999"
+      rpy="3.14159265358979 0 -2.73383166744153" />
+    <parent
+      link="left_arm_link" />
+    <child
+      link="left_arm_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_arm_link2">
+    <inertial>
+      <origin
+        xyz="-1.52655665885959E-15 2.4980018054066E-16 -0.0103796383542208"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763058" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="4.76456032830544E-22"
+        ixz="-1.48230765769503E-20"
+        iyy="1.10712638523325E-05"
+        iyz="1.47171974585435E-20"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_joint2"
+    type="fixed">
+    <origin
+      xyz="0.127 0 0"
+      rpy="-3.14159265358979 0 0.141401224368281" />
+    <parent
+      link="left_arm_link1" />
+    <child
+      link="left_arm_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_arm_link3">
+    <inertial>
+      <origin
+        xyz="0.0635000000000196 6.46704911844154E-15 0.00445605177225594"
+        rpy="0 0 0" />
+      <mass
+        value="0.0561945800618472" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="4.89690922631392E-20"
+        ixz="1.63053842346453E-19"
+        iyy="3.81793048154064E-05"
+        iyz="-3.87517573368842E-20"
+        izz="5.08927425696671E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0122735865819643"
+      rpy="3.14159265358979 0 -0.51044745877229" />
+    <parent
+      link="left_arm_link2" />
+    <child
+      link="left_arm_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_arm_link4">
+    <inertial>
+      <origin
+        xyz="1.13797860024079E-14 1.6903145549918E-14 -0.00189394822774391"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763058" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="2.11758236813575E-22"
+        ixz="-3.3881317890172E-21"
+        iyy="1.10712638523325E-05"
+        iyz="1.05879118406788E-21"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_joint4"
+    type="fixed">
+    <origin
+      xyz="0.12700000000002 0 0"
+      rpy="0 0 2.25512297298652" />
+    <parent
+      link="left_arm_link3" />
+    <child
+      link="left_arm_link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_arm_link5">
+    <inertial>
+      <origin
+        xyz="-0.0643991133502865 -7.39686090156511E-14 0.00824394822774355"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547240000001" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-2.4546591294956E-17"
+        ixz="1.35737029797502E-19"
+        iyy="4.03881189381033E-05"
+        iyz="4.2351647362715E-21"
+        izz="5.19515482305533E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_joint5"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="3.14159265358979 0 -0.136200538453035" />
+    <parent
+      link="left_arm_link4" />
+    <child
+      link="left_arm_link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_arm_dummy_link">
+    <inertial>
+      <origin
+        xyz="0.0245008866497048 0.0254 0.00635000000000008"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547240000001" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="5.11396141904784E-20"
+        ixz="5.9292306307801E-20"
+        iyy="4.03881189381033E-05"
+        iyz="-1.77876918923403E-20"
+        izz="5.19515482305533E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_dummy_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_arm_dummy_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_arm_dummy_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0888999999999685 -0.0254000000000961 0.00189394822774358"
+      rpy="0 0 0" />
+    <parent
+      link="left_arm_link5" />
+    <child
+      link="left_arm_dummy_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_arm_link">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 2.08166817117217E-15 0.0270180534713057"
+        rpy="0 0 0" />
+      <mass
+        value="0.0772222198144587" />
+      <inertia
+        ixx="4.2555170432403E-05"
+        ixy="-1.85288457211878E-22"
+        ixz="6.22569216231911E-20"
+        iyy="4.2555170432403E-05"
+        iyz="-4.31457407507659E-20"
+        izz="1.86827577508111E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.112681946528693 -0.0279400000000012"
+      rpy="1.57079632679492 1.49631531067135 -3.14159265358978" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_arm_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_arm_link1">
+    <inertial>
+      <origin
+        xyz="0.0635000000000006 1.97064586870965E-15 0.00190156102875016"
+        rpy="0 0 0" />
+      <mass
+        value="0.0561945800618471" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="2.35051642863068E-20"
+        ixz="-3.0916702574782E-20"
+        iyy="3.81793048154063E-05"
+        iyz="-1.35525271560688E-20"
+        izz="5.08927425696671E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0441664924425549"
+      rpy="0 0 2.49526943677936" />
+    <parent
+      link="right_arm_link" />
+    <child
+      link="right_arm_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_arm_link2">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 -2.77555756156289E-17 -0.00444843897124922"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763058" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="-1.00150892664858E-21"
+        ixz="-3.93158945146454E-21"
+        iyy="1.10712638523325E-05"
+        iyz="-5.0821976835258E-21"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_joint2"
+    type="fixed">
+    <origin
+      xyz="0.127 0 0"
+      rpy="0 0 2.2545" />
+    <parent
+      link="right_arm_link1" />
+    <child
+      link="right_arm_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_arm_link3">
+    <inertial>
+      <origin
+        xyz="0.0635000000000153 1.44606548957427E-14 -0.0107984389712492"
+        rpy="0 0 0" />
+      <mass
+        value="0.056194580061847" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="-1.42010367563104E-19"
+        ixz="-3.81164826264435E-21"
+        iyy="3.81793048154062E-05"
+        iyz="-1.84494363823827E-20"
+        izz="5.08927425696669E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.57576453791578" />
+    <parent
+      link="right_arm_link2" />
+    <child
+      link="right_arm_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_arm_link4">
+    <inertial>
+      <origin
+        xyz="-1.15740750317173E-14 -9.99200722162641E-15 0.00444843897124952"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763058" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="-4.2351647362715E-22"
+        ixz="2.96461531539005E-21"
+        iyy="1.10712638523325E-05"
+        iyz="-4.2351647362715E-21"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_joint4"
+    type="fixed">
+    <origin
+      xyz="0.127000000000015 0 0"
+      rpy="3.14159265358979 0 0.791256864324291" />
+    <parent
+      link="right_arm_link3" />
+    <child
+      link="right_arm_link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_arm_link5">
+    <inertial>
+      <origin
+        xyz="-0.0643991133502805 -1.00697228333502E-13 -0.00190156102875053"
+        rpy="0 0 0" />
+      <mass
+        value="0.057354724" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-4.07117651070511E-17"
+        ixz="4.31986803099693E-20"
+        iyy="4.03881189381032E-05"
+        iyz="-1.05879118406788E-21"
+        izz="5.19515482305532E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_joint5"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -2.2001" />
+    <parent
+      link="right_arm_link4" />
+    <child
+      link="right_arm_link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_arm_dummy_link">
+    <inertial>
+      <origin
+        xyz="0.0245008866497046 0.0253999999999988 0.00634999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.057354724" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="8.99972506457694E-21"
+        ixz="1.99052742604761E-20"
+        iyy="4.03881189381032E-05"
+        iyz="-8.89384594617015E-21"
+        izz="5.19515482305532E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_dummy_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_arm_dummy_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_arm_dummy_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0888999999999474 -0.0254000000001373 -0.00825156102875052"
+      rpy="0 0 0" />
+    <parent
+      link="right_arm_link5" />
+    <child
+      link="right_arm_dummy_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_rear_hip_link">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0772222198144587" />
+      <inertia
+        ixx="4.2555170432403E-05"
+        ixy="8.470329472543E-22"
+        ixz="2.03287907341032E-20"
+        iyy="4.2555170432403E-05"
+        iyz="-3.89635155736978E-20"
+        izz="1.86827577508111E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_hip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_hip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_hip_joint"
+    type="fixed">
+    <origin
+      xyz="0.1016 -0.0889 -0.07874"
+      rpy="1.5708 1.3266 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_rear_hip_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_rear_hip_link1">
+    <inertial>
+      <origin
+        xyz="-0.0634999999999989 1.11022302462516E-15 -0.00348570857054564"
+        rpy="0 0 0" />
+      <mass
+        value="0.0561945800618471" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="-3.08372932359769E-20"
+        ixz="1.49501315190384E-19"
+        iyy="3.81793048154063E-05"
+        iyz="1.33407689192552E-20"
+        izz="5.0892742569667E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_hip_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_hip_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_hip_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0155642914294541"
+      rpy="-3.14159265358979 0 2.9227694943902" />
+    <parent
+      link="left_rear_hip_link" />
+    <child
+      link="left_rear_hip_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_rear_knee_link">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 -1.11022302462516E-16 -0.00286429142945449"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763059" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="2.11758236813575E-22"
+        ixz="-3.0916702574782E-20"
+        iyy="1.10712638523325E-05"
+        iyz="-1.94817577868489E-20"
+        izz="1.66068957784988E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_knee_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_knee_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_knee_joint"
+    type="fixed">
+    <origin
+      xyz="-0.127 0 0"
+      rpy="3.14159265358979 0 1.22925344599165" />
+    <parent
+      link="left_rear_hip_link1" />
+    <child
+      link="left_rear_knee_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_rear_knee_link1">
+    <inertial>
+      <origin
+        xyz="-0.0643991133502946 -3.27515792264421E-15 0.00921429142945451"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547240000001" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-1.33614153473446E-18"
+        ixz="-6.01393392550553E-20"
+        iyy="4.03881189381034E-05"
+        iyz="-6.35274710440725E-22"
+        izz="5.19515482305534E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_knee_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_knee_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_knee_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="3.14159265358979 0 1.02130634175399" />
+    <parent
+      link="left_rear_knee_link" />
+    <child
+      link="left_rear_knee_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_rear_dummy_link">
+    <inertial>
+      <origin
+        xyz="0.0245008866497048 0.0254 0.00635000000000019"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547240000001" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="2.45110159111713E-20"
+        ixz="-5.9292306307801E-20"
+        iyy="4.03881189381034E-05"
+        iyz="2.85873619698326E-21"
+        izz="5.19515482305534E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_dummy_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_rear_dummy_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_dummy_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0888999999999984 -0.0254000000000045 0.00286429142945438"
+      rpy="0 0 0" />
+    <parent
+      link="left_rear_knee_link1" />
+    <child
+      link="left_rear_dummy_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_front_hip_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0772222198144586" />
+      <inertia
+        ixx="4.25551704324029E-05"
+        ixy="-2.91167575618666E-21"
+        ixz="7.83505476210228E-20"
+        iyy="4.25551704324029E-05"
+        iyz="-1.84759061619844E-20"
+        izz="1.8682757750811E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_hip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_hip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_hip_joint"
+    type="fixed">
+    <origin
+      xyz="-0.1016 -0.0889 -0.07874"
+      rpy="-1.5708 1.4089 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_front_hip_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_front_hip_link1">
+    <inertial>
+      <origin
+        xyz="-0.0634999999999989 3.28903571045203E-15 -0.00413058115419834"
+        rpy="0 0 0" />
+      <mass
+        value="0.0561945800618472" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="1.79729803495522E-20"
+        ixz="3.64224167319349E-20"
+        iyy="3.81793048154064E-05"
+        iyz="-4.80691197566815E-20"
+        izz="5.08927425696672E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_hip_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_hip_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_hip_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0149194188458016"
+      rpy="3.14159265358979 0 -2.99385816079686" />
+    <parent
+      link="left_front_hip_link" />
+    <child
+      link="left_front_hip_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_front_knee_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0 -0.00221941884580201"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763057" />
+      <inertia
+        ixx="1.10712638523324E-05"
+        ixy="2.11758236813575E-22"
+        ixz="1.03761536038652E-20"
+        iyy="1.10712638523324E-05"
+        iyz="4.02340649945793E-21"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_knee_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_knee_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_knee_joint"
+    type="fixed">
+    <origin
+      xyz="-0.127000000000001 0 0"
+      rpy="3.14159265358979 0 2.71763994433786" />
+    <parent
+      link="left_front_hip_link1" />
+    <child
+      link="left_front_knee_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_front_knee_link1">
+    <inertial>
+      <origin
+        xyz="-0.0643991133502949 -9.71445146547012E-16 0.00856941884580165"
+        rpy="0 0 0" />
+      <mass
+        value="0.057354724" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-9.67440665939969E-19"
+        ixz="-5.84452733605467E-20"
+        iyy="4.03881189381033E-05"
+        iyz="4.02340649945793E-21"
+        izz="5.19515482305533E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_knee_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_knee_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_knee_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.14159265358979 0 2.62289732606784" />
+    <parent
+      link="left_front_knee_link" />
+    <child
+      link="left_front_knee_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_front_dummy_link">
+    <inertial>
+      <origin
+        xyz="0.0245008866497048 0.0254000000000001 0.00634999999999991"
+        rpy="0 0 0" />
+      <mass
+        value="0.057354724" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-1.02117928161509E-19"
+        ixz="8.42797782518029E-20"
+        iyy="4.03881189381033E-05"
+        iyz="4.74073752666391E-20"
+        izz="5.19515482305533E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_dummy_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/left_front_dummy_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_dummy_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0888999999999987 -0.0254000000000019 0.00221941884580146"
+      rpy="0 0 0" />
+    <parent
+      link="left_front_knee_link1" />
+    <child
+      link="left_front_dummy_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_front_hip_link">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 5.55111512312578E-17 0.0271859005085105"
+        rpy="0 0 0" />
+      <mass
+        value="0.0772222198144587" />
+      <inertia
+        ixx="4.25551704324029E-05"
+        ixy="-2.38228016415272E-22"
+        ixz="-7.70270586409379E-21"
+        iyy="4.25551704324029E-05"
+        iyz="-4.06575814682064E-20"
+        izz="1.86827577508111E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_hip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_hip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_hip_joint"
+    type="fixed">
+    <origin
+      xyz="-0.1016 0.061714 -0.07874"
+      rpy="1.5708 -0.063777 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_front_hip_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_front_hip_link1">
+    <inertial>
+      <origin
+        xyz="0.0635000000000002 -1.61759494687885E-13 0.0040748192125461"
+        rpy="0 0 0" />
+      <mass
+        value="0.056194580061847" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="6.100495398759E-17"
+        ixz="5.46336250979024E-20"
+        iyy="3.81793048154062E-05"
+        iyz="-1.42936809849163E-20"
+        izz="5.08927425696669E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_hip_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_hip_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_hip_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0421610812959619"
+      rpy="0 0 -1.62386123679691" />
+    <parent
+      link="right_front_hip_link" />
+    <child
+      link="right_front_hip_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_front_knee_link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.00227518078745398"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763057" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="-4.2351647362715E-22"
+        ixz="1.65171424714589E-20"
+        iyy="1.10712638523324E-05"
+        iyz="8.68208770935658E-21"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_knee_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_knee_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_knee_joint"
+    type="fixed">
+    <origin
+      xyz="0.127 0 0"
+      rpy="0 0 -2.53988297981886" />
+    <parent
+      link="right_front_hip_link1" />
+    <child
+      link="right_front_knee_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_front_knee_link1">
+    <inertial>
+      <origin
+        xyz="-0.0643991133502952 -1.66533453693773E-16 -0.00862518078745406"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547240000001" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-5.85776222585552E-20"
+        ixz="-2.45639554703747E-20"
+        iyy="4.03881189381034E-05"
+        iyz="2.00111533788828E-20"
+        izz="5.19515482305535E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_knee_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_knee_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_knee_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -0.444918552874764" />
+    <parent
+      link="right_front_knee_link" />
+    <child
+      link="right_front_knee_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_front_dummy_link">
+    <inertial>
+      <origin
+        xyz="0.0245008866497047 0.0254000000000001 0.00635000000000002"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547240000001" />
+      <inertia
+        ixx="1.31052198647767E-05"
+        ixy="-5.12851979782877E-20"
+        ixz="-2.58345048912562E-20"
+        iyy="4.03881189381034E-05"
+        iyz="1.83170874843742E-20"
+        izz="5.19515482305534E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_dummy_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_front_dummy_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_dummy_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0888999999999999 -0.0254000000000002 -0.014975180787454"
+      rpy="0 0 0" />
+    <parent
+      link="right_front_knee_link1" />
+    <child
+      link="right_front_dummy_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_rear_hip_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -9.71445146547012E-17 0.03383948887112"
+        rpy="0 0 0" />
+      <mass
+        value="0.0772222198144586" />
+      <inertia
+        ixx="4.25551704324029E-05"
+        ixy="-4.2351647362715E-22"
+        ixz="2.15993401549847E-20"
+        iyy="4.25551704324029E-05"
+        iyz="7.45388993583784E-20"
+        izz="1.86827577508111E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_hip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_hip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_hip_joint"
+    type="fixed">
+    <origin
+      xyz="0.101600000000001 0.0550605111288811 -0.0787400000000002"
+      rpy="1.5707963267949 -1.01459157286801 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_rear_hip_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_rear_hip_link1">
+    <inertial>
+      <origin
+        xyz="-0.0635000000001462 -1.87239113103033E-13 0.0028894888711179"
+        rpy="0 0 0" />
+      <mass
+        value="0.0561945800618472" />
+      <inertia
+        ixx="1.42240417239566E-05"
+        ixy="2.96461531539005E-20"
+        ixz="1.10537799616686E-19"
+        iyy="3.81793048154063E-05"
+        iyz="-3.3881317890172E-21"
+        izz="5.0892742569667E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_hip_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_hip_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_hip_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.05"
+      rpy="0 0 0.449320374729743" />
+    <parent
+      link="right_rear_hip_link" />
+    <child
+      link="right_rear_hip_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_rear_knee_link">
+    <inertial>
+      <origin
+        xyz="8.22120149734928E-14 1.21069820835373E-13 -0.00346051112888224"
+        rpy="0 0 0" />
+      <mass
+        value="0.0514814798763058" />
+      <inertia
+        ixx="1.10712638523325E-05"
+        ixy="-2.64697796016969E-21"
+        ixz="5.0821976835258E-21"
+        iyy="1.10712638523325E-05"
+        iyz="-3.3881317890172E-21"
+        izz="1.66068957784987E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_knee_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_knee_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_knee_joint"
+    type="fixed">
+    <origin
+      xyz="-0.127000000000146 0 0"
+      rpy="0 0 -0.974827855737759" />
+    <parent
+      link="right_rear_hip_link1" />
+    <child
+      link="right_rear_knee_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_rear_knee_link1">
+    <inertial>
+      <origin
+        xyz="-0.0643991133501527 -3.34177130412172E-14 -0.00981051112888243"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547239999999" />
+      <inertia
+        ixx="1.31052198647766E-05"
+        ixy="6.35704844359253E-20"
+        ixz="-5.59041745187838E-20"
+        iyy="4.03881189381032E-05"
+        iyz="7.50418251708107E-21"
+        izz="5.19515482305532E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_knee_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_knee_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_knee_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.20572298824763" />
+    <parent
+      link="right_rear_knee_link" />
+    <child
+      link="right_rear_knee_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_rear_dummy_link">
+    <inertial>
+      <origin
+        xyz="0.0245008866497048 0.0254 0.00634999999999997"
+        rpy="0 0 0" />
+      <mass
+        value="0.0573547239999999" />
+      <inertia
+        ixx="1.31052198647766E-05"
+        ixy="6.80140986865601E-20"
+        ixz="-5.03984603616309E-20"
+        iyy="4.03881189381032E-05"
+        iyz="4.12928561786471E-21"
+        izz="5.19515482305532E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_dummy_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Project2_Assembly/meshes/right_rear_dummy_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_dummy_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0888999999998575 -0.0254000000000334 -0.0161605111288824"
+      rpy="0 0 0" />
+    <parent
+      link="right_rear_knee_link1" />
+    <child
+      link="right_rear_dummy_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <transmission name="right_front_hip_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_front_hip_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor1">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_front_knee_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_front_knee_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor2">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_rear_hip_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_rear_hip_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor3">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_rear_knee_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_rear_knee_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor4">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="left_front_hip_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_front_hip_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor5">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+
+  <transmission name="left_front_knee_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_front_knee_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor6">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_rear_hip_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_rear_hip_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor7">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+  
+  <transmission name="left_rear_knee_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_rear_knee_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor8">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+<!--
+  <transmission name="right_rear_dummy_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_rear_dummy_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor15">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+-->
+  <transmission name="left_arm_trans1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_arm_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor9">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_arm_trans1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_arm_joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor10">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+
+<transmission name="left_arm_trans3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_arm_joint3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor11">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_arm_trans3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_arm_joint3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor12">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+
+<transmission name="left_arm_trans5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_arm_joint5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor13">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_arm_trans5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_arm_joint5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor14">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+</robot>

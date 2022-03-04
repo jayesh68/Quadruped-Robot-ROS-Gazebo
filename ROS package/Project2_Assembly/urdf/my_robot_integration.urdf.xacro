@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- Name your robot here -->
+<robot name ="quad_walk" xmlns:xacro="http://wiki.ros.org/xacro">
+
+<!-- Include your urdf files here -->
+	<!-- Include Robot's urdf filepath -->
+	<!-- Include Lidar's urdf filepath -->
+	<xacro:include filename="$(find Project2_Assembly)/urdf/Project2_Assembly.urdf"/>
+
+<!--
+	<gazebo reference="right_rear_knee_link1">
+
+    		<mu1>1.4</mu1>
+    		<mu2>1.4</mu2>
+    		<maxVel>0.0</maxVel>
+    		<minDepth>0.00</minDepth>
+        </gazebo>
+	<gazebo reference="left_rear_knee_link1">
+
+    		<mu1>1.4</mu1>
+    		<mu2>1.4</mu2>
+    		<maxVel>0.0</maxVel>
+    		<minDepth>0.00</minDepth>
+        </gazebo>
+	<gazebo reference="right_front_knee_link1">
+
+    		<mu1>1.4</mu1>
+    		<mu2>1.4</mu2>
+    		<maxVel>1.0</maxVel>
+    		<minDepth>0.00</minDepth>
+        </gazebo>
+	<gazebo reference="left_front_knee_link1">
+
+    		<mu1>1.4</mu1>
+    		<mu2>1.4</mu2>
+    		<maxVel>0.0</maxVel>
+    		<minDepth>0.00</minDepth>
+        </gazebo>
+-->
+<!-- Add gazebo plugin for control here -->
+	<gazebo>
+		<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+			<robotNamespace>/quad_walk</robotNamespace>
+			<robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+		        <legacyModeNS>true</legacyModeNS>
+                </plugin>
+	</gazebo>
+
+</robot>
